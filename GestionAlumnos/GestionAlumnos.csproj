@@ -60,8 +60,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PaginaAula.xaml.cs">
+      <DependentUpon>PaginaAula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaDocente.xaml.cs">
+      <DependentUpon>PaginaDocente.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VentanaPrincipal.xaml.cs">
       <DependentUpon>VentanaPrincipal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaAlumno.xaml.cs">
+      <DependentUpon>PaginaAlumno.xaml</DependentUpon>
     </Compile>
     <Page Include="Informacion.xaml">
       <SubType>Designer</SubType>
@@ -87,7 +96,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PaginaAula.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaDocente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VentanaPrincipal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PaginaAlumno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -137,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\456212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="456212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Escudo_UAZ.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

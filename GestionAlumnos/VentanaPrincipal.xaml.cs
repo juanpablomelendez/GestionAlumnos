@@ -24,9 +24,40 @@ namespace GestionAlumnos
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
 
+        private void Button_Salir(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+       
+
+        private void Button_Estudiante(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+            this.Close();
+        }
+
+        private void Button_Docentes(object sender, RoutedEventArgs e)
+        {
+            PaginaDocente paginaDocente  = new PaginaDocente();
+            paginaDocente.Show();
+            this.Close();
+        }
+
+        private void Button_Aulas(object sender, RoutedEventArgs e)
+        {
+            PaginaAula ventanaa = new PaginaAula();
+            ventanaa.Show();
+            this.Close();
+        }
+
+        private void Button_Inicio(object sender, RoutedEventArgs e)
+        {
+            Window1 ventana2 = new Window1();
+            ventana2.Show();
+            this.Close();
         }
     }
 }
