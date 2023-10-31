@@ -77,6 +77,9 @@
     <Compile Include="PaginaAlumno.xaml.cs">
       <DependentUpon>PaginaAlumno.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FormularioAlumno.xaml.cs">
+      <DependentUpon>FormularioAlumno.xaml</DependentUpon>
+    </Compile>
     <Page Include="Informacion.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -112,6 +115,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="FormularioAlumno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -130,6 +137,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="GestionAlumnosDataSet.xsc">
       <DependentUpon>GestionAlumnosDataSet.xsd</DependentUpon>
@@ -160,16 +168,25 @@
     <None Include="Resources\456212.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="456212.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Escudo_UAZ.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="2023-10-30 11_51_53-Ingeniería de Software – Página oficial de Ingeniería de Software de la Universi.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="CALENDARIO_OFICIAL_23_24_H.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="5234582.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="9972270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="windowclose_104378.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="456212.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="d75245ef083eb6d380f4e37dd62994cb.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

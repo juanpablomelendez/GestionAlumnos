@@ -24,6 +24,7 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <TextBlock HorizontalAlignment="Center" Height="52" Margin="0,25,0,0" TextWrapping="Wrap" Text="Docentes" VerticalAlignment="Top" Width="180" FontSize="36" TextAlignment="Center" Foreground="#FF356831"/>
+            <Image HorizontalAlignment="Left" Height="119" Margin="29,110,0,0" VerticalAlignment="Top" Width="118" Source="/5234582.png"/>
 
         </Grid>
         <Button Content="atras" HorizontalAlignment="Left" Height="63" Margin="26,361,0,0" VerticalAlignment="Top" Width="148" Background="White" BorderBrush="White" Foreground="#FF08FC16" FontSize="20" FontFamily="Arial Black" Click="Button_Click"/>

@@ -23,11 +23,12 @@
                     <GradientStop Color="#FF54FF7D" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
+            <Image HorizontalAlignment="Left" Height="117" Margin="43,93,0,0" VerticalAlignment="Top" Width="107" Source="/9972270.png"/>
 
         </Grid>
-        <Button Content="atras" HorizontalAlignment="Left" Height="63" Margin="26,361,0,0" VerticalAlignment="Top" Width="148" Background="White" BorderBrush="White" Foreground="#FF08FC16" FontSize="20" FontFamily="Arial Black" Click="Button_Click"/>
+        <Button Content="atras" HorizontalAlignment="Left" Height="63" Margin="26,361,0,0" VerticalAlignment="Top" Width="148" Background="White" BorderBrush="White" Foreground="#FF1F2820" FontSize="20" FontFamily="Arial Black" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Height="52" Margin="26,20,0,0" TextWrapping="Wrap" Text="Alumno" VerticalAlignment="Top" Width="148" Foreground="#FF426846" FontSize="36" FontFamily="Segoe UI Symbol" TextAlignment="Center"/>
-        <Grid HorizontalAlignment="Left" Height="250" Margin="239,129,0,0" VerticalAlignment="Top" Width="473">
+        <Grid HorizontalAlignment="Left" Height="282" Margin="239,129,0,0" VerticalAlignment="Top" Width="473">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="325*"/>
                 <ColumnDefinition Width="148*"/>
@@ -38,8 +39,20 @@
                     <GradientStop Color="#FF0FFF1D" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.Background>
-            <ListBox x:Name="ListaAlumnos" HorizontalAlignment="Left" Height="182" Margin="35,40,0,0" VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" />
+            <ListBox x:Name="ListaAlumnos" HorizontalAlignment="Left" Height="182" Margin="35,40,0,0" VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Path=NombreCompleto}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Path=Genero}"/>
+                            <TextBlock Text="{Binding Path=Direccion}"/>
+                            <TextBlock Text="{Binding Path=Telefono}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
             <Label Content="Estudiantes&#xD;&#xA;Estudiantes" HorizontalAlignment="Left" Margin="35,5,0,0" VerticalAlignment="Top" Height="30" Width="160" Background="White" FontSize="16" FontFamily="Calibri" FontWeight="Bold"/>
         </Grid>
+        <Button Content="Agregar Alumno" HorizontalAlignment="Left" Height="50" Margin="418,361,0,0" VerticalAlignment="Top" Width="114" FontFamily="Arial Black" Background="White" Foreground="#FF2E3F30" Click="Button_Click_1"/>
     </Grid>
 </Window>

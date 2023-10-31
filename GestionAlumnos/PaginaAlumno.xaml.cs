@@ -40,6 +40,7 @@ namespace GestionAlumnos
         private void MuestraAlumnos()
         {
             string consulta = "SELECT Matricula, CONCAT(Nombre, ' ', Apellido) AS NombreCompleto, Genero, Direccion, Telefono FROM Alumnos";
+;
             SqlDataAdapter miAdaptadorSql = new SqlDataAdapter(consulta, MiConexionSql);
 
             using (miAdaptadorSql)
@@ -48,11 +49,15 @@ namespace GestionAlumnos
                 miAdaptadorSql.Fill(alumnosTabla);
 
                 // Configura la lista para mostrar el ID y la columna "Informacion"
-                ListaAlumnos.DisplayMemberPath = "Informacion";
-                ListaAlumnos.SelectedValuePath = "Matricula";
                 ListaAlumnos.ItemsSource = alumnosTabla.DefaultView;
             }
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window3 window3 = new Window3();    
+            window3.Show();
+
+        }
     }
 }
