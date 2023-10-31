@@ -33,8 +33,12 @@
             </StackPanel>
         </Grid>
         <Image HorizontalAlignment="Left" Height="80" Margin="712,0,0,0" VerticalAlignment="Top" Width="117" Source="/Escudo_UAZ.jpg"/>
-        <Image HorizontalAlignment="Left" Height="99" Margin="50,10,0,0" VerticalAlignment="Top" Width="130" Source="/Resources/456212.png"/>
+        <Image HorizontalAlignment="Left" Height="99" Margin="50,10,0,0" VerticalAlignment="Top" Width="130" Source="/456212.png"/>
         <Button Content="salir" HorizontalAlignment="Left" Height="51" Margin="689,373,0,0" VerticalAlignment="Top" Width="101" BorderBrush="White" Background="#FFDA2626" Foreground="White" Click="Button_Salir"/>
+        <Grid HorizontalAlignment="Left" Height="246" Margin="247,127,0,0" VerticalAlignment="Top" Width="472" Background="#FF5AE071">
+            <Image HorizontalAlignment="Center" Height="135" VerticalAlignment="Top" Width="472" Source="/2023-10-30 11_51_53-Ingeniería de Software – Página oficial de Ingeniería de Software de la Universi.png"/>
+            <Image HorizontalAlignment="Center" Height="184" Margin="0,58,0,0" VerticalAlignment="Top" Width="508" Source="/CALENDARIO_OFICIAL_23_24_H.jpg"/>
+        </Grid>
 
 
     </Grid>

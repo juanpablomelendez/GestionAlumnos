@@ -23,5 +23,12 @@ namespace GestionAlumnos
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 ventana2 = new Window1();
+            ventana2.Show();
+            this.Close();
+        }
     }
 }

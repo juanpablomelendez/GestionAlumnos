@@ -7,6 +7,39 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
-        
+        <Grid Height="93" VerticalAlignment="Top" Margin="10,0,-10,0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF74FF81"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TextBlock Text="ControlEscolar" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" Foreground="#FF375131"/>
+        </Grid>
+        <Grid Width="200" HorizontalAlignment="Left">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF54FF7D" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+
+        </Grid>
+        <Button Content="atras" HorizontalAlignment="Left" Height="63" Margin="26,361,0,0" VerticalAlignment="Top" Width="148" Background="White" BorderBrush="White" Foreground="#FF08FC16" FontSize="20" FontFamily="Arial Black" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="52" Margin="26,20,0,0" TextWrapping="Wrap" Text="Alumno" VerticalAlignment="Top" Width="148" Foreground="#FF426846" FontSize="36" FontFamily="Segoe UI Symbol" TextAlignment="Center"/>
+        <Grid HorizontalAlignment="Left" Height="250" Margin="239,129,0,0" VerticalAlignment="Top" Width="473">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="325*"/>
+                <ColumnDefinition Width="148*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF0FFF1D" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <ListBox x:Name="ListaAlumnos" HorizontalAlignment="Left" Height="182" Margin="35,40,0,0" VerticalAlignment="Top" Width="397" Grid.ColumnSpan="2" />
+            <Label Content="Estudiantes&#xD;&#xA;Estudiantes" HorizontalAlignment="Left" Margin="35,5,0,0" VerticalAlignment="Top" Height="30" Width="160" Background="White" FontSize="16" FontFamily="Calibri" FontWeight="Bold"/>
+        </Grid>
     </Grid>
 </Window>

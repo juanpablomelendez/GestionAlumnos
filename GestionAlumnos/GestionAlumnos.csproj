@@ -60,6 +60,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GestionAlumnosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestionAlumnosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PaginaAula.xaml.cs">
       <DependentUpon>PaginaAula.xaml</DependentUpon>
     </Compile>
@@ -83,11 +88,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="GestionAlumnosDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GestionAlumnosDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Informacion.xaml.cs">
       <DependentUpon>Informacion.xaml</DependentUpon>
@@ -164,6 +164,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Escudo_UAZ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2023-10-30 11_51_53-Ingeniería de Software – Página oficial de Ingeniería de Software de la Universi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CALENDARIO_OFICIAL_23_24_H.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

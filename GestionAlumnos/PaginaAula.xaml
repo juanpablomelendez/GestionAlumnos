@@ -25,7 +25,8 @@
             </Grid.Background>
 
         </Grid>
-        <Button Content="atras" HorizontalAlignment="Left" Height="63" Margin="26,361,0,0" VerticalAlignment="Top" Width="148" Background="White" BorderBrush="White" Foreground="#FF08FC16" FontSize="20" FontFamily="Arial Black"/>
+        <Button Content="atras" HorizontalAlignment="Left" Height="63" Margin="26,361,0,0" VerticalAlignment="Top" Width="148" Background="White" BorderBrush="White" Foreground="#FF08FC16" FontSize="20" FontFamily="Arial Black" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="26,23,0,0" TextWrapping="Wrap" Text="Aulas" VerticalAlignment="Top" Width="148" FontSize="36" TextAlignment="Center" Foreground="#FF3B6C3E"/>
 
     </Grid>
 </Window>

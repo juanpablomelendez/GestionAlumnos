@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="PaginaDocente" Height="450" Width="800">
     <Grid>
-        
+        <Grid Height="93" VerticalAlignment="Top" Margin="10,0,-10,0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF74FF81"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TextBlock Text="ControlEscolar" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" Foreground="#FF375131"/>
+        </Grid>
+        <Grid Width="200" HorizontalAlignment="Left">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF54FF7D" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TextBlock HorizontalAlignment="Center" Height="52" Margin="0,25,0,0" TextWrapping="Wrap" Text="Docentes" VerticalAlignment="Top" Width="180" FontSize="36" TextAlignment="Center" Foreground="#FF356831"/>
+
+        </Grid>
+        <Button Content="atras" HorizontalAlignment="Left" Height="63" Margin="26,361,0,0" VerticalAlignment="Top" Width="148" Background="White" BorderBrush="White" Foreground="#FF08FC16" FontSize="20" FontFamily="Arial Black" Click="Button_Click"/>
     </Grid>
 </Window>
