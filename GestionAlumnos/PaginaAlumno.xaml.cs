@@ -59,5 +59,18 @@ namespace GestionAlumnos
             window3.Show();
 
         }
+
+        private void EliminarAlumno_Click(object sender, RoutedEventArgs e)
+        {
+            string consulta = "DELETE FROM Alumnos WHERE Matricula = @Matricula";
+            SqlCommand sqlCommand = new SqlCommand(consulta,MiConexionSql);
+            MiConexionSql.Open();
+            sqlCommand.Parameters.AddWithValue("@Matricula", ListaAlumnos.SelectedValue);
+            sqlCommand.ExecuteNonQuery();
+            MiConexionSql.Close();
+            MuestraAlumnos();
+        }
+
+        
     }
 }

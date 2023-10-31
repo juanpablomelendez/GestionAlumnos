@@ -26,7 +26,7 @@
         <Button x:Name="ingresar" Content="ingresar" HorizontalAlignment="Left" Margin="492,263,0,0" VerticalAlignment="Top" Height="35" Width="144" Click="Button_Click_4"/>
         <Button x:Name="salir" Content="Salir&#xD;&#xA;" HorizontalAlignment="Left" Height="23" Margin="710,388,0,0" VerticalAlignment="Top" Width="64" Click="salir_Click" Background="#FFB41717" Foreground="White"/>
         <Image HorizontalAlignment="Left" Height="158" Margin="218,0,0,0" VerticalAlignment="Center" Width="167" Source="/d75245ef083eb6d380f4e37dd62994cb.jpg"/>
-        <Label Content="Gesion Alumno" HorizontalAlignment="Left" Margin="233,10,0,0" VerticalAlignment="Top" Height="51" Width="557" Foreground="#FF4CDD9E" FontSize="36" FontFamily="Arial"/>
+        <Label Content="FULL HOUSE!!!!!!" HorizontalAlignment="Left" Margin="233,10,0,0" VerticalAlignment="Top" Height="51" Width="557" Foreground="#FF4CDD9E" FontSize="36" FontFamily="Arial"/>
 
 
 
